@@ -157,7 +157,7 @@ graylog.prototype._log = function log(short_message, full_message, additionalFie
 
     // We insert additional fields
     for (field in additionalFields) {
-        message['_' + field] = additionalFields[field];
+        message[field] = additionalFields[field];
     }
 
     // https://github.com/Graylog2/graylog2-docs/wiki/GELF
